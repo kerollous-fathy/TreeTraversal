@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace TreeTraversal.Tree
+{
+    public class Node
+    {
+        public int Item { get; set; }
+        public Node? Left { get; set; }
+        public Node? Right { get; set; }
+
+        public Node(int item)
+        {
+            Item = item;
+            Left = null;
+            Right = null;
+        }
+    }
+}
