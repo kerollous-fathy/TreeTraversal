@@ -47,5 +47,24 @@ namespace TreeTraversal.Tree
             }
         }
 
+
+        //Breadth-First Traversal
+        public void LevelOrder(Node root)
+        {
+            if (root == null)
+                return;
+            Queue<Node> queue = new Queue<Node>();
+            queue.Enqueue(root);
+            while(queue.Count > 0)
+            {
+                Node curr = (Node)queue.Peek();
+                Console.Write(curr.Item + " ");
+                if(curr.Left != null)
+                    queue.Enqueue(curr.Left);
+                if(curr.Right != null)
+                    queue.Enqueue(curr.Right);
+                queue.Dequeue();
+            }
+        }
     }
 }

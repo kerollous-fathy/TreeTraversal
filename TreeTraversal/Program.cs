@@ -29,6 +29,10 @@ namespace TreeTraversal
             Console.WriteLine("Post-Order Traversal");
             tree.PostOrder(tree.Root);
 
+            Console.WriteLine();
+
+            Console.WriteLine("Level Order Traversal");
+            tree.LevelOrder(tree.Root);
 
         }
     }
