@@ -91,3 +91,33 @@ avl.PrintInOrder(Root);
 Console.WriteLine($"\nRoot Node is: {Root?.Item}");
 Console.WriteLine($"Total Tree Height is: {Root?.Height}");
 ```
+
+# Expected Output
+
+## Insertion Steps
+* Inserting value `40`
+* Inserting value `20`
+* Inserting value `10`
+* Inserting value `25`
+* Inserting value `30`
+* Inserting value `22`
+* Inserting value `50`
+
+---
+
+## In-Order Traversal
+1. 10
+2. 20
+3. 22
+4. 25
+5. 30
+6. 40
+7. 50
+
+---
+
+## Tree Summary
+| Property | Value |
+| :--- | :--- |
+| **Root Node** | `25` |
+| **Total Tree Height** | `3` |
