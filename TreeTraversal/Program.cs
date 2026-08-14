@@ -7,6 +7,7 @@ namespace TreeTraversal
     {
         static void Main(string[] args)
         {
+            #region Binary Tree
             //BinaryTree tree = new BinaryTree();
             //tree.Root = new Node(1);
             //tree.Root.Left = new Node(2);
@@ -33,29 +34,50 @@ namespace TreeTraversal
             //Console.WriteLine();
 
             //Console.WriteLine("Level Order Traversal");
-            //tree.LevelOrder(tree.Root);
+            //tree.LevelOrder(tree.Root); 
+            #endregion
 
 
-            BinarySearchTree bst = new BinarySearchTree();
-            Node Root = new Node(20);
-            bst.Insert(Root);
-            bst.Insert(new Node(10));
-            bst.Insert(new Node(30));
-            bst.Insert(new Node(25));
-            bst.Insert(new Node(35));
+            #region Binary Search Tree
+            //BinarySearchTree bst = new BinarySearchTree();
+            //Node Root = new Node(20);
+            //bst.Insert(Root);
+            //bst.Insert(new Node(10));
+            //bst.Insert(new Node(30));
+            //bst.Insert(new Node(25));
+            //bst.Insert(new Node(35));
 
-            Console.WriteLine("--- (In-Order) ---");
-            bst.InOrder(bst.Root);
-            Console.WriteLine("\n");
+            //Console.WriteLine("--- (In-Order) ---");
+            //bst.InOrder(bst.Root);
+            //Console.WriteLine("\n");
 
-            bst.Delete(20);
+            //bst.Delete(20);
 
-            Console.WriteLine("--- after delete node 20 ---");
-            bst.InOrder(bst.Root);
-            Console.WriteLine("\n");
+            //Console.WriteLine("--- after delete node 20 ---");
+            //bst.InOrder(bst.Root);
+            //Console.WriteLine("\n");
 
-            Console.WriteLine("Is number 20 exist? " + bst.Search(20)); 
-            Console.WriteLine("Is number 25 exist? " + bst.Search(25));
+            //Console.WriteLine("Is number 20 exist? " + bst.Search(20));
+            //Console.WriteLine("Is number 25 exist? " + bst.Search(25)); 
+            #endregion
+
+            #region AVL Tree
+            //AVLTree avl = new AVLTree();
+            //Node Root = null;
+
+            //int[] values = new int[] { 40, 20, 10, 25, 30, 22, 50 };
+            //foreach (int value in values)
+            //{
+            //    Console.WriteLine($"Inserting value {value}");
+            //    Root = avl.AVLInsert(Root, value);
+            //}
+
+            //Console.WriteLine("Print In-Order Traversal");
+            //avl.PrintInOrder(Root);
+
+            //Console.WriteLine($"\nRoot Node is: {Root?.Item}");
+            //Console.WriteLine($"Total Tree Height is: {Root?.Height}"); 
+            #endregion
         }
     }
 }

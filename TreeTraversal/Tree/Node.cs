@@ -11,12 +11,14 @@ namespace TreeTraversal.Tree
         public int Item { get; set; }
         public Node? Left { get; set; }
         public Node? Right { get; set; }
+        public int Height { get; set; }
 
         public Node(int item)
         {
             Item = item;
             Left = null;
             Right = null;
+            Height = 1;
         }
     }
 }
